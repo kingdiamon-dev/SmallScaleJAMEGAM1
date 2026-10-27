@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bo18chymc1tb6"]
+
+[ext_resource type="Texture2D" uid="uid://cksnfadj7m3dc" path="res://assets/New Piskel (31).png" id="1_7s4qf"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vtaks"]
+rough = true
+bounce = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_myviy"]
+radius = 6.0
+
+[node name="Ball" type="RigidBody2D" unique_id=982093975]
+physics_material_override = SubResource("PhysicsMaterial_vtaks")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=85803578]
+scale = Vector2(3, 3)
+texture = ExtResource("1_7s4qf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=681196538]
+position = Vector2(0, -3)
+scale = Vector2(3, 3)
+shape = SubResource("CircleShape2D_myviy")

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ngeb7kqpoy7h"]
+
+[node name="Fader" type="CanvasLayer" unique_id=39738120]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1661144842]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(29.319998, 16.559998)
+mouse_filter = 2
+color = Color(0, 0, 0, 0)

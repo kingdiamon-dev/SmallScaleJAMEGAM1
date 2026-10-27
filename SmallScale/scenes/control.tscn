@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://c0lb7rmg0pql2"]
+
+[ext_resource type="FontFile" uid="uid://jpf0yjbjplom" path="res://fonts/PixelifySans-VariableFont_wght.ttf" id="1_5p55f"]
+
+[node name="Control" type="Control" unique_id=789409285]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1374204277]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(29.479996, 16.92)
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=700542438]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_5p55f")
+theme_override_font_sizes/font_size = 49
+text = "More coming soon..."
+horizontal_alignment = 1

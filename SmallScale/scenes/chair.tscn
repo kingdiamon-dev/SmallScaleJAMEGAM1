@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://d3x1urguw1k8x"]
+
+[ext_resource type="Texture2D" uid="uid://pr2yejwng2br" path="res://assets/New Piskel (30).png" id="1_i2o7u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_34i51"]
+size = Vector2(80.9693, 10.981791)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p7oo4"]
+size = Vector2(24.000006, 87.000015)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p046u"]
+size = Vector2(18, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xpc3t"]
+size = Vector2(20, 30)
+
+[node name="chair" type="RigidBody2D" unique_id=2052009095]
+mass = 1000.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1053515294]
+scale = Vector2(7, 7)
+texture = ExtResource("1_i2o7u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=972246125]
+position = Vector2(-3.5358498, 26.69712)
+scale = Vector2(2.3333328, 2.3333328)
+shape = SubResource("RectangleShape2D_34i51")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1586492390]
+position = Vector2(-70, -10.500003)
+scale = Vector2(2.3333328, 2.3333328)
+shape = SubResource("RectangleShape2D_p7oo4")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=463700612]
+position = Vector2(-56, 86.333336)
+scale = Vector2(2.3333335, 2.3333335)
+shape = SubResource("RectangleShape2D_p046u")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="." unique_id=471973725]
+position = Vector2(60.666668, 74.66667)
+scale = Vector2(2.3333335, 2.3333335)
+shape = SubResource("RectangleShape2D_xpc3t")

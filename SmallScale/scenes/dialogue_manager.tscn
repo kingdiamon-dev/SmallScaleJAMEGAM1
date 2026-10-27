@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://ci0f2lxta5db8"]
+
+[ext_resource type="Script" uid="uid://4ek4o623uu3" path="res://scripts/dialogue_manager.gd" id="1_516v5"]
+[ext_resource type="FontFile" uid="uid://jpf0yjbjplom" path="res://fonts/PixelifySans-VariableFont_wght.ttf" id="2_smvbx"]
+[ext_resource type="Texture2D" uid="uid://cy6cqsd4luixy" path="res://assets/tinies/New Piskel (23) (5).png" id="3_smvbx"]
+[ext_resource type="AudioStream" uid="uid://b7xinneljilhq" path="res://audio/pickupCoin (2).wav" id="4_61474"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_myviy"]
+font = ExtResource("2_smvbx")
+font_size = 32
+font_color = Color(0.09411765, 1, 0.09411765, 1)
+
+[node name="DialogueManager" type="CanvasLayer" unique_id=445280498]
+process_mode = 3
+script = ExtResource("1_516v5")
+
+[node name="Control" type="Control" parent="." unique_id=508074511]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="NewPiskel(23)(5)" type="Sprite2D" parent="Control" unique_id=902674408]
+position = Vector2(114, -29.99997)
+scale = Vector2(3, 3)
+texture = ExtResource("3_smvbx")
+
+[node name="Label" type="Label" parent="Control" unique_id=772590804]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_myviy")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=135894719]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.23137255, 0.23137255, 0.23137255, 0.54509807)
+
+[node name="ColorRect2" type="ColorRect" parent="Control" unique_id=1590626525]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -255.0
+offset_bottom = -55.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.11999971, 0.27999997)
+color = Color(0.23137255, 0.23137255, 0.23137255, 0.54509807)
+
+[node name="Label" type="Label" parent="Control/ColorRect2" unique_id=445246699]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3.0000203, 1.0111015)
+theme_override_fonts/font = ExtResource("2_smvbx")
+theme_override_font_sizes/font_size = 100
+text = "Chief"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Control" unique_id=251567571]
+stream = ExtResource("4_61474")
+bus = &"SFX"
