@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b2jeqs67hpgcu"]
+
+[ext_resource type="Texture2D" uid="uid://5k52qo8roxl0" path="res://assets/New Piskel (38).png" id="1_avkd5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_myviy"]
+size = Vector2(12.699999, 13)
+
+[node name="Trash" type="RigidBody2D" unique_id=186518390]
+mass = 1000.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=623334788]
+scale = Vector2(5, 5)
+texture = ExtResource("1_avkd5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2143405042]
+position = Vector2(2.7499998, 3.5)
+scale = Vector2(5, 5)
+shape = SubResource("RectangleShape2D_myviy")

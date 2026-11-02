@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b2j7dwpprhy2k"]
+
+[ext_resource type="Texture2D" uid="uid://dlsi6oehxojcd" path="res://assets/New Piskel (26).png" id="1_hdbqx"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_myviy"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_myviy"]
+radius = 2.0
+
+[node name="pole" type="RigidBody2D" unique_id=93047173]
+mass = 0.007
+physics_material_override = SubResource("PhysicsMaterial_myviy")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1342877771]
+scale = Vector2(2, 2)
+texture = ExtResource("1_hdbqx")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Sprite2D" unique_id=652793247]
+position = Vector2(-3, 1)
+shape = SubResource("CapsuleShape2D_myviy")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1122682284]
+position = Vector2(-6, 2)
+scale = Vector2(2, 2)
+shape = SubResource("CapsuleShape2D_myviy")

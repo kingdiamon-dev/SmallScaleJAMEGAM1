@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://46ogf1nypf3v"]
+
+[ext_resource type="Texture2D" uid="uid://oe7js20vvtvw" path="res://assets/New Piskel (28).png" id="1_umosx"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_myviy"]
+bounce = 0.4
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p7oo4"]
+size = Vector2(4, 47)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_34i51"]
+size = Vector2(53.5, 29)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p046u"]
+size = Vector2(5, 59)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xpc3t"]
+size = Vector2(4, 39)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s2fy6"]
+size = Vector2(6, 18)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_idxkn"]
+size = Vector2(3.5, 11)
+
+[node name="arrow" type="RigidBody2D" unique_id=2027143135]
+physics_material_override = SubResource("PhysicsMaterial_myviy")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=645776545]
+scale = Vector2(5, 5)
+texture = ExtResource("1_umosx")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=310071121]
+position = Vector2(3, -5.5)
+shape = SubResource("RectangleShape2D_p7oo4")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="." unique_id=1517941329]
+position = Vector2(13, -5)
+shape = SubResource("RectangleShape2D_p7oo4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1150362127]
+position = Vector2(-2.75, -5)
+shape = SubResource("RectangleShape2D_34i51")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=392863459]
+position = Vector2(8, -5)
+shape = SubResource("RectangleShape2D_p046u")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="." unique_id=1001280187]
+position = Vector2(17, -5.5)
+shape = SubResource("RectangleShape2D_xpc3t")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="." unique_id=1648766235]
+position = Vector2(27, -5)
+shape = SubResource("RectangleShape2D_s2fy6")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="." unique_id=45812853]
+position = Vector2(32, -4)
+shape = SubResource("RectangleShape2D_idxkn")

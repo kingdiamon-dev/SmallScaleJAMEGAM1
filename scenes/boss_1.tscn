@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b5qf4xdgohwk0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_myviy"]
+
+[node name="Boss1" type="RigidBody2D" unique_id=432268249]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1077164795]
+sprite_frames = SubResource("SpriteFrames_myviy")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1797666019]

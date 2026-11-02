@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://ba0qakgoca1xb"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_myviy"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_34i51"]
+normal = Vector2(-1, 0)
+
+[node name="Borders" type="Node" unique_id=413827985]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=643564092]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1816143255]
+position = Vector2(0, 18)
+shape = SubResource("WorldBoundaryShape2D_myviy")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=180328881]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1198070650]
+position = Vector2(-249, -23)
+rotation = -3.1396658
+shape = SubResource("WorldBoundaryShape2D_34i51")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=1433737510]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D3" unique_id=494504549]
+position = Vector2(1095, -110)
+shape = SubResource("WorldBoundaryShape2D_34i51")

@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://kwhsllqkb554"]
+
+[ext_resource type="Texture2D" uid="uid://dy8ra8y3io7dr" path="res://assets/New Piskel (27).png" id="1_uljo2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p046u"]
+size = Vector2(8, 2.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_34i51"]
+size = Vector2(14, 18)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p7oo4"]
+size = Vector2(4, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xpc3t"]
+size = Vector2(2.5, 3)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_myviy"]
+size = Vector2(20, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s2fy6"]
+size = Vector2(16, 1)
+
+[node name="plant" type="StaticBody2D" unique_id=499640530]
+scale = Vector2(2, 2)
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="." unique_id=680085952]
+position = Vector2(-2, -8)
+shape = SubResource("RectangleShape2D_p046u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=566052497]
+position = Vector2(0, 7)
+shape = SubResource("RectangleShape2D_34i51")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=347118284]
+texture = ExtResource("1_uljo2")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=802864882]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_p7oo4")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=607851310]
+position = Vector2(-4, -13)
+shape = SubResource("RectangleShape2D_xpc3t")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="." unique_id=855796482]
+position = Vector2(0, 9)
+shape = SubResource("RectangleShape2D_myviy")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="." unique_id=765059795]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_s2fy6")

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://u30db2jq8jey"]
+
+[ext_resource type="Texture2D" uid="uid://bbruxa0xmbpu3" path="res://assets/TableJG1.png" id="1_02ppr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p7oo4"]
+size = Vector2(129, 8.5)
+
+[node name="Table" type="Sprite2D" unique_id=1268785347]
+texture = ExtResource("1_02ppr")
+
+[node name="Collider" type="StaticBody2D" parent="." unique_id=1840563429]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collider" unique_id=722020971]
+position = Vector2(-7.5, -34.25)
+shape = SubResource("RectangleShape2D_p7oo4")
+one_way_collision = true
